@@ -25,7 +25,7 @@
   --color-gold: var(--color-gold);
   --color-blush: var(--color-blush);
 
-  --font-display: var(--font-cormorant), "Cormorant Garamond", serif;
+  --font-display: var(--font-display), "Playfair Display", serif;
   --font-body: var(--font-inter), "Inter", sans-serif;
   --font-script: var(--font-parisienne), "Parisienne", cursive;
 

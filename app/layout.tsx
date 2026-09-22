@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter, Parisienne } from "next/font/google";
+import { Inter, Parisienne, Playfair_Display } from "next/font/google";
 import { BackgroundMusic } from "@/components/audio/BackgroundMusic";
 import { Navigation } from "@/components/invitation/Navigation";
 import { couple, eventDetails } from "@/data/invitation";
 import "./globals.css";
 
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
+const playfair = Playfair_Display({
+  variable: "--font-display",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
   display: "swap",
 });
@@ -36,7 +36,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${cormorant.variable} ${inter.variable} ${parisienne.variable} h-full scroll-smooth antialiased`}
+      className={`${playfair.variable} ${inter.variable} ${parisienne.variable} h-full scroll-smooth antialiased`}
     >
       <body className="min-h-full bg-ivory font-body text-brown">
         <BackgroundMusic>
