@@ -1,10 +1,13 @@
 // Centralized invitation content. Edit here to update copy across the site —
 // never hardcode names, dates or venue details inside individual components.
 
+const partnerOne = "Raj Gopal";
+const partnerTwo = "Subhiksha";
+
 export const couple = {
-  partnerOne: "Raj Gopal",
-  partnerTwo: "Subiksha",
-  full: "Raj Gopal & Subiksha",
+  partnerOne,
+  partnerTwo,
+  full: `${partnerOne} & ${partnerTwo}`,
   initials: "R & S",
 };
 

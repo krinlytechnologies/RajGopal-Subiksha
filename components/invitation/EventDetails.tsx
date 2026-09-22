@@ -17,15 +17,15 @@ export function EventDetails() {
           scrim="none"
           sizes="100vw"
         />
-        {/* Soft paper-toned glow: keeps the dark text readable regardless of the
-            dappled leaf shadows the photo casts across the archway wall. */}
-        <div
-          className="absolute inset-0 bg-[radial-gradient(ellipse_65%_55%_at_50%_50%,rgba(249,242,230,0.65),rgba(249,242,230,0)_72%)]"
-          aria-hidden="true"
-        />
-
         <div className="absolute inset-0 flex items-center justify-center px-6">
-          <RevealGroup className="flex max-w-sm flex-col items-center text-center" stagger={0.12}>
+          {/* Paper card: a near-opaque plaque (echoing the wooden sign already
+              in the photo) guarantees the text reads clearly no matter where
+              the arch's leaf shadows fall, rather than a soft wash that can
+              still lose to dark foliage. */}
+          <RevealGroup
+            className="flex w-full max-w-sm flex-col items-center rounded-sm bg-ivory/95 px-7 py-10 text-center shadow-[0_30px_70px_-30px_rgba(58,42,31,0.5)] sm:px-10 sm:py-12"
+            stagger={0.12}
+          >
             <RevealItem as="p" className="font-display text-sm uppercase tracking-[0.35em] text-brown/80">
               {eventDetailsSection.eyebrow}
             </RevealItem>
