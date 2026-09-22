@@ -34,8 +34,8 @@ export const navigation = {
 };
 
 export const audio = {
-  // Place the background track at this path — see public/audio/README.md.
-  src: "/audio/background-music.mp3",
+  // Keep the file under public/audio so it can be served directly by the browser.
+  src: "/audio/song.mpeg",
 };
 
 export const hero = {
