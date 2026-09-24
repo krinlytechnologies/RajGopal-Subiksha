@@ -16,9 +16,9 @@ export function Welcome() {
         sizes="100vw"
       />
 
-      <div className="text-shadow-soft relative z-10 mx-auto flex w-full max-w-2xl flex-col items-center px-6 py-28 text-center sm:py-36">
-        <Reveal>
-          <h2 className="font-display text-4xl leading-[1.15] text-ivory sm:text-5xl md:text-6xl">
+      <div className="text-shadow-soft relative z-10 mx-auto flex w-full max-w-2xl flex-col items-center px-4 py-24 text-center sm:px-6 sm:py-36">
+        <Reveal x={12} y={28} duration={0.9}>
+          <h2 className="mx-auto max-w-[12ch] font-display text-[clamp(2.7rem,9vw,5rem)] leading-[0.9] tracking-[-0.04em] text-ivory sm:leading-[1.02] md:text-6xl">
             {welcome.lines.map((line) => (
               <span key={line} className="block">
                 {line}
@@ -26,11 +26,11 @@ export function Welcome() {
             ))}
           </h2>
         </Reveal>
-        <Reveal delay={0.2} className="mt-8">
+        <Reveal delay={0.18} y={18} duration={0.7} className="mt-6 sm:mt-8">
           <BotanicalDivider tone="ivory" />
         </Reveal>
-        <Reveal delay={0.3} className="mt-8">
-          <p className="font-display text-sm uppercase tracking-[0.35em] text-ivory/85 sm:text-base">
+        <Reveal delay={0.28} y={18} duration={0.7} className="mt-6 sm:mt-8">
+          <p className="font-display text-[0.72rem] uppercase tracking-[0.18em] text-ivory drop-shadow-[0_2px_8px_rgba(58,42,31,0.55)] sm:text-base sm:tracking-[0.22em]">
             {welcome.names}
           </p>
         </Reveal>

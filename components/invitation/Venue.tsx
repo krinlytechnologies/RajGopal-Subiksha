@@ -22,16 +22,16 @@ export function Venue() {
         aria-hidden="true"
       />
 
-      <div className="text-shadow-soft relative z-10 mx-auto w-full max-w-3xl px-6 text-center">
-        <Reveal>
-          <h2 className="font-display text-4xl leading-[1.2] text-ivory sm:text-5xl md:text-6xl">
+      <div className="text-shadow-soft relative z-10 mx-auto w-full max-w-3xl px-4 text-center sm:px-6">
+        <Reveal x={10} y={26} duration={0.9}>
+          <h2 className="mx-auto max-w-[11ch] font-display text-[clamp(2.5rem,8vw,5rem)] leading-[0.96] tracking-[-0.04em] text-ivory sm:leading-[1.08] md:text-6xl">
             {venue.lines.map((line) => (
               <span key={line} className="block">
                 {line}
               </span>
             ))}
           </h2>
-          <div className="mt-8 flex justify-center">
+          <div className="mt-6 flex justify-center sm:mt-8">
             <BotanicalDivider tone="ivory" />
           </div>
         </Reveal>

@@ -23,6 +23,7 @@ type RevealProps = {
   as?: Tag;
   delay?: number;
   y?: number;
+  x?: number;
   duration?: number;
   once?: boolean;
 };
@@ -33,6 +34,7 @@ export function Reveal({
   as = "div",
   delay = 0,
   y = 24,
+  x = 0,
   duration = 0.8,
   once = true,
 }: RevealProps) {
@@ -47,8 +49,13 @@ export function Reveal({
 
   const MotionTag = TAGS[as];
   const variants: Variants = {
-    hidden: { opacity: 0, y },
-    visible: { opacity: 1, y: 0, transition: { duration, delay, ease: EASE } },
+    hidden: { opacity: 0, y, x },
+    visible: {
+      opacity: 1,
+      y: 0,
+      x: 0,
+      transition: { duration, delay, ease: EASE },
+    },
   };
 
   return (
@@ -56,7 +63,7 @@ export function Reveal({
       className={className}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once, margin: "-10% 0px -10% 0px" }}
+      viewport={{ once, amount: 0.4, margin: "-12% 0px -8% 0px" }}
       variants={variants}
     >
       {children}
