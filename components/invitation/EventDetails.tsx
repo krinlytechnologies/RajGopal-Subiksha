@@ -34,11 +34,11 @@ export function EventDetails() {
               <BotanicalDivider />
             </RevealItem>
 
-            <RevealItem as="p" className="mt-7 font-display text-lg italic text-brown-soft">
-              {eventDetails.day}
-            </RevealItem>
-            <RevealItem as="h2" className="mt-1 font-display text-4xl text-brown sm:text-5xl">
+            <RevealItem as="h2" className="mt-7 font-display text-4xl text-brown sm:text-5xl">
               {eventDetails.date}
+            </RevealItem>
+            <RevealItem as="p" className="mt-1 font-display text-lg italic text-brown-soft">
+              {eventDetails.day}
             </RevealItem>
 
             <RevealItem as="p" className="mt-4 font-body text-sm uppercase tracking-[0.25em] text-brown-soft sm:text-base">

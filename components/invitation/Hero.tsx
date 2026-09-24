@@ -27,7 +27,12 @@ export function Hero() {
       />
 
       <div className="text-shadow-soft relative z-10 flex w-full flex-1 flex-col justify-between px-5 pb-10 pt-32 sm:px-10 sm:pb-14 sm:pt-40">
-        <Reveal as="h1" y={28} duration={0.9} className="max-w-xl font-display text-4xl leading-[1.15] text-ivory sm:text-5xl md:text-6xl">
+        <Reveal
+          as="h1"
+          y={28}
+          duration={0.9}
+          className="max-w-none whitespace-nowrap font-display text-[2.15rem] leading-[1.05] text-ivory sm:text-[3rem] md:text-[4rem]"
+        >
           {hero.names}
         </Reveal>
 
