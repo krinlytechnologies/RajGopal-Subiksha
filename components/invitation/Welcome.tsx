@@ -16,7 +16,7 @@ export function Welcome() {
         sizes="100vw"
       />
 
-      <div className="text-shadow-soft relative z-10 mx-auto flex w-full max-w-2xl flex-col items-center px-4 pt-10 text-center sm:px-6 sm:pt-16">
+      <div className="text-shadow-soft relative z-10 mx-auto flex w-full max-w-2xl flex-col items-center px-4 pt-6 text-center sm:px-6 sm:pt-10">
         <Reveal x={12} y={28} duration={0.9}>
           <h2 className="mx-auto max-w-[12ch] font-display text-[clamp(2.7rem,9vw,5rem)] leading-[0.9] tracking-[-0.04em] text-ivory sm:leading-[1.02] md:text-6xl">
             {welcome.lines.map((line) => (

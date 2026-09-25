@@ -35,7 +35,7 @@ export const navigation = {
 
 export const audio = {
   // Keep the file under public/audio so it can be served directly by the browser.
-  src: "/audio/song.mpeg",
+  src: "/audio/song.mp3",
 };
 
 export const hero = {
