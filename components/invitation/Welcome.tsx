@@ -16,12 +16,7 @@ export function Welcome() {
         sizes="100vw"
       />
 
-      <div className="text-shadow-soft relative z-10 mx-auto flex w-full max-w-2xl flex-col items-center px-4 py-24 text-center sm:px-6 sm:py-36">
-        <Reveal delay={0.12} y={18} duration={0.7} className="-mt-3 mb-4 sm:-mt-6 sm:mb-6">
-          <p className="font-display text-[0.72rem] uppercase tracking-[0.18em] text-ivory drop-shadow-[0_2px_8px_rgba(58,42,31,0.55)] sm:text-base sm:tracking-[0.22em]">
-            {welcome.names}
-          </p>
-        </Reveal>
+      <div className="text-shadow-soft relative z-10 mx-auto flex w-full max-w-2xl flex-col items-center px-4 pt-10 text-center sm:px-6 sm:pt-16">
         <Reveal x={12} y={28} duration={0.9}>
           <h2 className="mx-auto max-w-[12ch] font-display text-[clamp(2.7rem,9vw,5rem)] leading-[0.9] tracking-[-0.04em] text-ivory sm:leading-[1.02] md:text-6xl">
             {welcome.lines.map((line) => (
