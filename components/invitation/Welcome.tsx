@@ -2,7 +2,6 @@ import { invitationImages } from "@/data/images";
 import { welcome } from "@/data/invitation";
 import { ParallaxImage } from "../ui/ParallaxImage";
 import { Reveal } from "../ui/Reveal";
-import { BotanicalDivider } from "../ui/BotanicalDivider";
 
 export function Welcome() {
   return (
@@ -10,24 +9,21 @@ export function Welcome() {
       <ParallaxImage
         src={invitationImages.welcome.src}
         alt={invitationImages.welcome.alt}
-        className="absolute inset-0"
+        className="absolute inset-0"  
         strength={34}
         scrim="full"
         sizes="100vw"
       />
 
-      <div className="text-shadow-soft relative z-10 mx-auto flex w-full max-w-2xl flex-col items-center px-4 pt-6 text-center sm:px-6 sm:pt-10">
-        <Reveal x={12} y={28} duration={0.9}>
-          <h2 className="mx-auto max-w-[12ch] font-display text-[clamp(2.7rem,9vw,5rem)] leading-[0.9] tracking-[-0.04em] text-ivory sm:leading-[1.02] md:text-6xl">
+      <div className="text-shadow-soft relative z-10 mx-auto flex w-full max-w-2xl flex-col items-center px-4 pt-2 text-center sm:px-6 sm:pt-2">
+        <Reveal x={2} y={2} duration={0.9}>
+          <h2 className="mx-auto max-w-[11ch] -translate-y-4 font-display text-[clamp(3rem,8vw,7rem)] leading-[0.68] tracking-[-0.05em] text-ivory sm:leading-[0.78] md:text-[6.2rem]">
             {welcome.lines.map((line) => (
               <span key={line} className="block">
                 {line}
               </span>
             ))}
           </h2>
-        </Reveal>
-        <Reveal delay={0.18} y={18} duration={0.7} className="mt-6 sm:mt-8">
-          <BotanicalDivider tone="ivory" />
         </Reveal>
       </div>
     </section>
